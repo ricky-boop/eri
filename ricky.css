@@ -1,0 +1,212 @@
+.first{
+    bottom: 10px;
+    position: fixed;
+    /* background-color: blue; position fixed setles elements in the bottom
+     */
+}
+.body{
+    align-content: baseline;
+    background-color: black;
+    display: block;
+
+}
+
+
+
+
+
+
+
+
+.search{
+    right:0px;
+    margin-top: 50px;
+    position: fixed ;
+
+}
+.Notification{
+    right:0px;
+    margin-top: 10px;
+    position: fixed ;
+
+}
+
+
+
+.eric{
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.home{
+    margin-left: 100px;
+    
+}
+.second{
+    margin-left: 250px;
+    bottom: 10px;
+    position: fixed;
+}
+.third{
+    margin-left: 600px;
+    bottom: 10px;
+    position: fixed;
+}
+.fourth{
+    margin-left:850px ; 
+    bottom: 10px;
+    position: fixed;
+
+.video buttons{
+    margin-right: 600px;
+}
+
+}
+.video-container{
+    margin-left: 850px;
+}
+
+
+
+
+
+
+.fifth{
+    margin-left: 1200px;
+    bottom: 10px;
+    position: fixed;
+}
+
+
+.video-container{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: centre;
+    margin-top: 20px;
+}
+
+.video{
+    width: 100%;
+    height: auto;
+}
+ 
+.home-container{
+    text-align: centre;
+}
+
+.video-buttons{
+    margin-left: 750px;
+    
+}
+
+.button-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 800px;
+    margin-top: 10cm;
+    position: absolute;
+    padding-bottom: 100px;
+    padding-left: 150px;
+}
+
+.another-account{
+    margin-left: 1000px;
+    margin-top: 20px;
+}
+
+
+
+
+.side-buttons {
+    position: relative;
+  }
+  
+  .side-buttons .button {
+    position: absolute;
+    top: 0;
+    transform: translateY(50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .side-buttons .button:nth-child(1) {
+    left: -30px;
+  }
+  
+  .side-buttons .button:nth-child(2) {
+    left: -10px;
+  }
+  
+  .side-buttons .button:nth-child(3) {
+    left: -10px;
+    bottom: -30px;
+  }
+  
+  .side-buttons .button:nth-child(4) {
+    left: -30px;
+    bottom: -30px;
+  }
+
+
+
+
+  .media-container{
+    position: relative;
+    width: auto;
+  }
+
+
+  .video-buttons-container{
+    position: absolute;
+    margin-bottom: 20px;
+  }
+
+
+ 
+imageData.lengthimageGrid.innerHTMLimagePost.classNameimagePost.innerHTML.container {
+    max-width: 640px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.image-post {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.image-post img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.like-button,.comment-button,.share-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.like-button:hover,.comment-button:hover,.share-button:hover {
+    background-color: #3e8e41;
+}
+ 

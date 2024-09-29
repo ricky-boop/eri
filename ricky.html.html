@@ -1,0 +1,380 @@
+
+
+<!DOCTYPE html>
+<html long="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+    Initial-scale=1.0">
+        <title>EXAMIT PROJECT</title>
+        <button class="eric">EXAMIT</button>
+        <head>
+            <div>
+                <form id="search-form" class="search" style="top: 10px;">
+                    <input type="search" id="search-box" placeholder="Search for an account...">
+                    <button type="submit">Search</button>
+                </form>
+                <div id="results-container"></div>
+            </div>
+            <div id="photo-container"></div>
+              
+           
+            <div>
+                <button id="notification-button" class="Notification" style="top: 0px;">Notifications</button>
+                <div> id="notification-container" class="hidden"></div>
+                  <ul id="notification-list"></ul>
+            </div>
+            <div>
+                <div class="home buttons" style="margin-left: 0px; margin-top: 10px; top: 0px; position: relative;">
+                    <button id="friends-btn">friends</button>
+                    <button id="following-btn">following</button>
+                    <button id="all-photos-btn"> for you</button>
+                    <div id="photo-container"></div>
+                    <div id="photo-containers"></div>
+                    <div id="content-container"></div>
+                </div>
+                 
+                <div class="video button" style="margin-left: 850px; top: 80px; position: absolute;">
+                    <button id="friends-button">friends</button>
+                        <template id="video-temprate">
+                            <div class="video-card">
+                                <video width="100%" controls>
+                                    <source src="" type="video/mp4">
+                                </video>
+                                <p class="video-title"></p>
+                            </div>
+                        </template>
+                    <button id="following-button">following</button>
+                    <template id="video-temprate">
+                        <div class="video-card">
+                            <video width="100%" controls>
+                                <source src="" type="video/mp4">
+                            </video>
+                            <p class="video-title"></p>
+                        </div>
+                    </template>
+                    <button id="for-everyone-button">for you</button>
+                    <template id="video-temprate">
+                        <div class="video-card">
+                            <video width="100%" controls>
+                                <source src="" type="video/mp4">
+                            </video>
+                            <p class="video-title"></p>
+                        </div>
+                    </template>
+                    <div id="video-container"></div>
+                    <div id="video-container"></div> 
+                </div> 
+             
+   
+        </head>
+
+        <link rel="stylesheet" href="ricky.css"></link>
+
+    </head>
+ 
+    <body class="body">
+       <!---
+        <div class="container">
+            <h1>login</h1>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">username</label>
+                    <input type="text" placeholder="username" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">password</label>
+                    <input type="password" placeholder="password" id="password" name="password" required>
+                </div>
+                <button type="submit" id="login">login</button>
+
+            </form>
+            <p>Don't have an account? <a href="signup.html">sign Up</a></p>
+        </div>
+    
+        
+
+
+
+
+        <div class="search"> <input type="text" placeholder="search"> </div>
+
+        <div class="home-container">
+            <h1>home</h1>
+            <div id="userPictures"></div>
+            <div class="top-buttons">
+                <button>friends</button>
+                <button>following</button>
+                <button>for you</button>
+            </div>
+            <button class="first" id="homeIcon" onclick="goToHome()">home</button>
+        </div>
+
+
+
+        <div class="videos-container">
+            <div class="video-buttons">
+                <button>friends</button>
+                <button>following</button>
+                <button>for you</button>
+            </div>
+            <div class="button-bar">
+                <button>like</button>
+                <button>share</button>
+                <button>comment</button>
+                <button>save</button>
+            </div>
+            <button class="fourth" id="videosIcon" onclick="goToVideos()">videos</button>
+        </div> 
+
+
+
+
+
+
+        <div class="chat-container">
+            <div class="message">
+                <p>welcome to our chatbot</p>
+                <div>
+                    <button class="btn" onclick="sendMessage('product')">message</button>
+                    <button class="support-button" onclick="sendMessage('support')"> support</button>
+                </div>
+                <div>
+                    <button class="second" id="messageIcon">message</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    
+
+        <div id="media-container">
+            <div ></div>
+            <div id="home-button">home</div>
+            <div id="videos-button">videos</div>
+            <div id="add-button">add</div>
+            <button class="third" id="addButton">add</button>
+            <div></div>
+            <input type="file" id="file-input" multiple style="display: none;">
+            <input type="file" id="video-input" accept="video/*" style="display: none;">
+        </div>
+
+
+        <div id="accountSection">
+            <h2>user account</h2>
+            <div id="followers">followers: <span id="followersCount">0</span></div>
+            <div id="following">following: <span id="followingCount">0</span></div>
+            <div id="bio">Bio: <span id="userBio">no bio available</span></div>
+            <button class="fifth">account</button>
+        </div>
+    
+    <html lang="en"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EXAMIT PROJECT</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body> 
+        <div>
+        
+	<form id="search-form" class="search">
+		<input type="search" id="search-box" placeholder="Search for an account...">
+		<button type="submit">Search</button>
+	</form>
+	<div id="results-container"></div>
+    </div> -->
+
+
+    <!--div id="messages"></div>
+    <input id="message-input" type="text" placeholder="Type your message here...">
+    <button id="send-button">Send</button>
+
+    
+    <div>
+    <button id="notification-button" class="Notification">Notifications</button>
+    <div id="notification-container" class="hidden">
+      <ul id="notification-list"></ul>
+    </div>  
+    --->
+
+    
+        <div class="add-button-container">
+            <button class="third" id="add-media-button">Add Media</button>
+            <div>
+                <div id="media-container" style="width: 100px;"> <image></image>
+                  <!--- <div class="interaction-buttons">
+                        <button class="like-button">
+                            <i class="fas fa-thumps-up"></i>
+                            <span class="like-count">0</span>
+                        </button></div> -->
+                </div>
+            </div>
+            
+          <!---  <div class="video-post">
+                <video width="100%">
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-metadata">
+                <h2>video Title</h2>
+                <p>uploaded by <span class="username">john doe</span></p>
+            </div>
+            <div class="interaction-buttons">
+                <button class="like-button">
+                    <i class="fas fa-thumps-up"></i>
+                    <span class="like-count">0</span>
+                </button>
+            </div>-->
+        </div>
+    
+        <div>
+            <div><button class="first" id="home-button">home</button> 
+                
+             <!---
+                <div id="media-container" style="position: absolute;">
+                    <img src="path/to/image.jpg" alt="Description of the image">
+                    <div class="button-container" style="position: relative;">
+                        <button class="share-button">Share</button>
+                        <button class="comment-button">Comment</button>
+                        <button class="like-button">Like</button>
+                    </div>
+                </div>
+            </div>   
+        </div> 
+        <div>
+            <div> -->
+                <button class="fourth" id="videos-button">Videos</button>
+             <!---   <div class="video buttons">
+                    <button>friends</button>
+                    <button>following</button>
+                    <button>for you</button>
+                </div>
+
+                    <div>    
+                        <template id="side-buttons-template">
+                        <button class="like-button">Like</button>
+                        <button class="comment-button">Comment</button>
+                        <button class="share-button">Share</button>
+                        <button class="save-button">Save</button>
+                        </template>
+                    </div>  -->    
+                </div> 
+            </div> 
+      </div>      
+         <!--  
+      <div class="media-container" id="media-container">
+        <video>
+          <source src="your-video-source.mp4">
+        </video>
+        <div class="video-buttons-container">
+          <button class="like-button">Like</button>
+          <button class="share-button">Share</button>
+          <button class="comment-button">Comment</button>
+        </div>
+      </div> -->
+      
+    
+            
+
+           <!--- <div class="button-bar">
+                <button>like</button>
+                <button>share</button>
+                <button>comment</button>
+                <button>save</button>
+            </div>
+        </div>
+        <div id="media-container">
+            <div class="media-item photo">
+                <div class="button-container">
+                    <button class="like-button">like</button>
+                    <button class="comment-button">comment</button>
+                    <button class="share-button">share</button>
+                </div>
+            </div>
+            <div class="media-item-video">
+                <div class="button-bar">
+                    <button class="like-button">like</button>
+                    <button class="comment-button">comment</button>
+                    <button class="share-button">share</button>
+                    <button class="save-button">save</button>
+                </div>
+            </div>
+        </div> -->
+               <!-- <div id="photo-actions">
+                    <button id="like-button">Like</button>
+                    <span id="like-count">0</span>
+                    <button id="comment-button">Comment</button>
+                    <button id="share-button">Share</button>
+                    <div id="comment-container" class="hidden">
+                    <ul id="comment-list"></ul>
+                </div>
+            -->
+              
+        </div>
+           <!--<div id="photo-actions">
+              <button id="like-button">Like</button>
+              <span id="like-count">0</span>
+              <button id="comment-button">Comment</button>
+              <button id="share-button">Share</button>
+              <div id="comment-container" class="hidden">
+                <ul id="comment-list"></ul>
+              </div>
+            </div> -->
+        </div>
+
+
+        <div>
+            <button id="new-message-btn" class="second">new messages</button>
+            <div id="message-container">
+                <!-- Messages will be inserted here -->
+            </div>
+        </div>
+
+        <div>
+            <button id="create-account-btn" class="fifth">Create Account</button>
+            <div id="user-profile" style="display:none;">
+                <h3 id="user-bio">Your Bio Here</h3>
+                <p>Followers: <span id="follower-count">0</span></p>
+                <p>Following: <span id="following-count">0</span></p>
+            </div>
+
+            <div id="content"></div>
+            <script src="app.js"></script>
+        
+        </div>
+
+ 
+
+
+
+        <script src="script.js"></script>
+          
+
+        <script src="ricky.js"></script>
+        <script>
+            /* 
+            if (isLoggedIn()) {
+                //window.location.href = '/page';
+            }
+            function isLoggedIn() {
+                return localStorage.getItem('isLoggedIn') === 'true';
+            }
+            */
+
+    <div class="container">
+        <button id="add-button">Add image</button>
+        <div class="image-grid">
+            
+            <!-- images will be rendered here -->
+        </div>
+    
+    </div>
+
+    
+        </script>
+        
+    </body>
+</html>
